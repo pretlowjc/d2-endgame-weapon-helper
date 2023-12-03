@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -8,10 +9,12 @@ import { ChecklistComponent } from './checklist/checklist.component';
 import { LinksComponent } from './links/links.component';
 import { DpsComponent } from './dps/dps.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+
 
 
 import { AngularRoutingModule } from './angular-routing.module';
+import { AngularMaterialModule } from './angular-material.module';
+
 
 @NgModule({
   declarations: [
@@ -22,12 +25,14 @@ import { AngularRoutingModule } from './angular-routing.module';
     LinksComponent,
     DpsComponent,
     HeaderComponent,
-    FooterComponent,
+
 
   ],
   imports: [
     BrowserModule,
-    AngularRoutingModule
+    AngularRoutingModule,
+    AngularMaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

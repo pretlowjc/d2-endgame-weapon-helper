@@ -19,11 +19,11 @@ import { PerkTierComponent } from './perk-tier/perk-tier.component';
 
 
 const routes: Routes = [
-    { path: '', component: HomeComponent},
+    { path: 'home', component: HomeComponent},
     { path: 'checklist', component: ChecklistComponent},
     { path: 'dps', component: DpsComponent},
     { path: 'links', component: LinksComponent},
-    {path: 'perk-tier', component: PerkTierComponent}
+    { path: 'perk-tier', component: PerkTierComponent}
 ];
 
 @NgModule({

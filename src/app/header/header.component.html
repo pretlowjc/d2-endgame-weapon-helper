@@ -1,0 +1,17 @@
+<mat-toolbar id="appTitle">
+    <h1>Destiny 2 End Game Helper</h1>
+</mat-toolbar>
+<nav mat-tab-nav-bar id="appHeader">
+    <ul class="headerList">
+        <li *ngFor="let link of links" class="headerListItem">
+            <a mat-tab-link [routerLink]="link.path"
+            mat-button
+            color="primary"
+            routerLinkActive="active"
+            (click)="activeLink = link"
+            [active]="activeLink == link">
+            {{link.name}}
+            </a>
+        </li>
+    </ul>
+</nav>
