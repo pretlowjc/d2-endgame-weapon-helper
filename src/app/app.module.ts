@@ -7,6 +7,11 @@ import { PerkTierComponent } from './perk-tier/perk-tier.component';
 import { ChecklistComponent } from './checklist/checklist.component';
 import { LinksComponent } from './links/links.component';
 import { DpsComponent } from './dps/dps.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+
+
+import { AngularRoutingModule } from './angular-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +20,14 @@ import { DpsComponent } from './dps/dps.component';
     PerkTierComponent,
     ChecklistComponent,
     LinksComponent,
-    DpsComponent
+    DpsComponent,
+    HeaderComponent,
+    FooterComponent,
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AngularRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
