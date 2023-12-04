@@ -10,7 +10,7 @@ export class HeaderComponent {
   links = [
     { path: 'home', name: 'Home'},
     { path: 'checklist', name: 'Endgame Weapon Checklist'},
-    { path: 'dps', name: 'DPS Calculator'},
+    { path: 'dps', name: 'DPS Chart'},
     { path: 'links', name: 'Useful Links'},
     { path: 'perk-tier', name: 'Weapon Perk Tier List'}
   ]
