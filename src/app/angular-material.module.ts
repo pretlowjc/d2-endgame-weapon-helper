@@ -1,7 +1,8 @@
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatTabsModule } from '@angular/material/tabs'
+import { MatTabsModule } from '@angular/material/tabs';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatListModule } from '@angular/material/list'
+import { MatListModule } from '@angular/material/list';
+import { MatSortModule } from '@angular/material/sort';
 import { NgModule } from '@angular/core';
 
 @NgModule({
@@ -9,13 +10,15 @@ import { NgModule } from '@angular/core';
         MatToolbarModule,
         MatTabsModule,
         MatCheckboxModule,
-        MatListModule
+        MatListModule,
+        MatSortModule
     ],
     exports: [
         MatToolbarModule,
         MatTabsModule,
         MatCheckboxModule,
-        MatListModule
+        MatListModule,
+        MatSortModule
     ]
 })
 
