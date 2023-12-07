@@ -1,0 +1,41 @@
+mat-toolbar {
+    position: fixed;
+}
+
+header {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+table {
+    border: solid black 1px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(60, 54, 237);
+    color: white;
+}
+
+caption {
+    margin-bottom: 10px;
+}

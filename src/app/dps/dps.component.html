@@ -1,1 +1,48 @@
-<p>dps works!</p>
+<header>
+    <h1>DPS of Primary Weapon Types</h1>
+    <h2>What is this?</h2>
+    <h4>
+        This chart is to show a comparison of each primary weapon type and compare
+        their dps numbers against each other. This will provide us with legimate
+        numbers and proof of what weapons are better, viable, and others to simply
+        not touch unless other circumstances arise.
+    </h4>
+    <h4>
+        True DPS: This number is the amount of damage in one single magazine. Calculating
+        this is rather simple except when it comes to certain weapons such as shotguns which
+        are not shown.
+    </h4>
+    <h4>
+        Sustained DPS: This number is given taking reloading into consideration. This
+        number is a bit more useful in my opinion. During a DPS phase or while damaging
+        enemies that can take more damage you will want a weapon that has a higher
+        number for sustained dps.
+    </h4>
+</header>
+<main>
+    <table matSort (matSortChange)="sortData($event)">
+        <caption><strong>Primary Weapon DPS</strong></caption>
+        <tr>
+            <th mat-sort-header="weaponType">Weapon Type</th>
+            <th mat-sort-header="frame">Frame</th>
+            <th mat-sort-header="trueDps">True DPS</th>
+            <th mat-sort-header="sustainedDps">Sustained DPS</th>
+        </tr>
+
+        <tr *ngFor="let weapon of sortedData">
+            <td>{{weapon.weaponType}}</td>
+            <td>{{weapon.frame}}</td>
+            <td>{{weapon.trueDps}}</td>
+            <td>{{weapon.sustainedDps}}</td>
+        </tr>
+    </table>
+    <h5>
+        Here is the data source that I used. Within it you will also find the reddit user
+        who created this amazing chart. This took a substantial amount of time for him to
+        create so I will give credit where credit is due.
+        <br>
+        <a href="https://docs.google.com/spreadsheets/d/1x12Ar1-kHH2AzHY8Clkv-PIMxxDSZrIX3e4xiJuQ-uI/edit#gid=0">
+            Original Spreadsheet
+        </a>
+    </h5>
+</main>

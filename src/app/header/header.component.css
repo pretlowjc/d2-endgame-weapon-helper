@@ -13,3 +13,13 @@
     padding: 0px;
     margin: auto;    
 }
+
+mat-toolbar {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    background-color: darkgrey;
+    color: white;
+}
